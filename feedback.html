@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+        <title>Brands</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }  
+      .contact-container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+          justify-content: space-evenly;  
+      }
+      .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px   ;
+      }
+      .contact-left-title h2{
+font-weight: 600;
+color: #49494b;
+font-size: 40px;
+margin-bottom: 5px;
+      }
+      .contact-inputs{
+        width: 400px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        font-weight: 500;
+        color: #49494b  ;
+        border-radius: 50px;
+
+      }
+      .contact-left textarea{
+height: 140px;
+padding-top: 15px;
+border-radius: 20px;
+      }
+      .contact-inputs:focus{
+        border: 2px solid #49494b;
+      }
+      .contact-inputs::placeholder{
+        color: #49494b ;
+      }
+      .contact-left button{
+        display: flex;
+        align-items: center;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(270deg, #d1bfa7, #49494b);
+        cursor: pointer;
+      }
+      .contact-left button img{
+        height: 15px;
+      }
+      .contact-right img{
+        width: 500px;
+      }
+      @media (max-width:800px){
+        .contact-inputs{
+            width: 80vw;
+        }
+        .contact-right{
+            display: none;
+        }
+      }
+          </style>
+</head>
+<body style="background-color: #bd8c7d;">
+    <header style="background-color:#d1bfa7 ;" id="header">
+        
+        <div class="header-top-bar">
+            <span>Welcome to Pascal Imitation Jewellery Store</span>
+        </div>
+  
+        <nav style="background-color: #d1bfa7;" class="navigation">
+  
+            <a href="index.html" class="logo">
+                <img src="Logo.png">
+                <h1 style="position: absolute; top: 100px; left: 150px; font-size: 1.95rem;">PASCAL IMITATION JEWELLERY</h1>
+            </a>
+      
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                  <li><a href="#new_products">New Arrivals</a></li>
+                  <li><a href="brands.html">Brands</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                
+              </ul>
+    </nav>
+    </header>
+    <div class="contact-container">
+        <form class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <p style="text-align: center; color: #49494b;">We'd love to hear from you. Fill out the form below.</p>
+            </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Messsage" class="contact-inputs" required></textarea>
+            <button type="submit"> Submit <img src="images/arrow_icon.png" alt="">  </button>
+        </form>
+        <div class="contact-right">
+            <img src="images/right_img.png" alt="">
+        </div>
+    
+    </div>
+    \
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            
+            
+        </div>
+    
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#main-banner">Home</a>
+            </li>
+            <li>
+                <a href="#aboutus">About Us</a>
+            </li>
+            <li>
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#">Feedback</a>
+          </li>
+        </ul>
+        <ul>
+            <p class="copyright"> &copy; 2024 Pascal Jewellery | All Rights Reserved</p>
+        </ul>
+    </footer>
+</body>
+</html>
